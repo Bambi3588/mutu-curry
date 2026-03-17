@@ -96,7 +96,7 @@ body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);overflow-x:hi
 .sec-label{display:inline-block;font-size:.58rem;letter-spacing:.45em;color:var(--ember);border-left:2px solid var(--ember);padding-left:.8em;margin-bottom:1.5rem;font-weight:700;text-transform:uppercase}
 .sec-title{font-family:'Shippori Mincho B1',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;line-height:1.45;margin-bottom:1.8rem;color:var(--char)}
 .sec-title .hl{color:var(--ember);border-bottom:2px solid var(--gold);padding-bottom:.05em}
-.sec-body{font-size:.95rem;line-height:2.2;color:#3d3020;margin-bottom:1.2rem}
+.sec-body{font-size:.95rem;line-height:2.2;color:#3d3020;margin-bottom:1.2rem;word-break:normal;overflow-wrap:break-word}
 
 /* ═══ A. WHY（画像左/テキスト右） ═══ */
 .sec-why{display:grid;grid-template-columns:1fr 1fr;min-height:90vh}
@@ -375,7 +375,7 @@ body{padding-top:64px}
   /* ── SEC 共通 ── */
   .sec-label{font-size:.52rem;letter-spacing:.3em}
   .sec-title{font-size:clamp(1.5rem,7vw,2rem);margin-bottom:1.2rem;line-height:1.5}
-  .sec-body{font-size:.9rem;line-height:2}
+  .sec-body{font-size:.9rem;line-height:1.9;text-align:left}
 
   /* ── A. WHY ── */
   .sec-why{grid-template-columns:1fr}
@@ -497,6 +497,13 @@ body{padding-top:64px}
   .fnav-sub{display:none}
   .btn-fnav{font-size:.75rem;padding:.6em 1em;letter-spacing:.06em}
   .btn-fnav svg{width:14px;height:14px}
+
+  /* ── スマホ本文改行・整列 ── */
+  .sec-body br{display:none}
+  .sec-chain-body .sec-body{text-align:left}
+  .sec-chain-body{text-align:left}
+  .sec-solution-inner .sec-body br{display:none}
+  .sec-solution-inner .sec-body{text-align:left}
 
 }
 </style>
@@ -638,7 +645,7 @@ body{padding-top:64px}
     </div>
     <div class="rev-highlight reveal">
       <div class="rh-label">〆カレーだけで月間</div>
-      <div class="rh-num">88,500<span>〜</span>147,500<span style="font-size:2rem">円</span></div>
+      <div class="rh-num">88,500 ~ 147,500<span style="font-size:2rem">円</span></div>
       <div class="rh-sub">仕込み時間 <strong style="color:#fff">0分</strong> ／ 追加食材 <strong style="color:#fff">なし</strong> ／ 既存オペレーション <strong style="color:#fff">変更なし</strong></div>
     </div>
   </div>
@@ -758,7 +765,7 @@ body{padding-top:64px}
     <div class="storage-cards">
       <div class="stor-card reveal d1"><div class="sc-icon">🧊</div><div class="sc-label">保存方法</div><div class="sc-val">冷凍保存</div></div>
       <div class="stor-card reveal d2"><div class="sc-icon">📅</div><div class="sc-label">賞味期限</div><div class="sc-val">製造から1年</div></div>
-      <div class="stor-card reveal d3"><div class="sc-icon">❄️</div><div class="sc-label">解凍後（冷蔵）</div><div class="sc-val">3〜4日</div></div>
+      <div class="stor-card reveal d3"><div class="sc-icon">❄️</div><div class="sc-label">解凍後（冷蔵）</div><div class="sc-val">3 ~ 4日</div></div>
       <div class="stor-card reveal d4"><div class="sc-icon">📦</div><div class="sc-label">最低注文量</div><div class="sc-val">1kgから</div></div>
     </div>
     <h3 class="sec-title reveal" style="font-size:1.5rem;margin:3rem 0 1rem;text-align:center">お好みの分量で提供できます</h3>
@@ -791,7 +798,7 @@ body{padding-top:64px}
       </div>
       <div class="faq-item">
         <div class="faq-q"><div class="fq-mark">Q</div><div class="fq-text">解凍後の保存期間は？</div><div class="fq-arrow">+</div></div>
-        <div class="faq-a">冷蔵で3〜4日が目安です。キッチンポットでの保存をおすすめします。</div>
+        <div class="faq-a">冷蔵で3 ~ 4日が目安です。キッチンポットでの保存をおすすめします。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><div class="fq-mark">Q</div><div class="fq-text">最低注文量はどのくらいですか？</div><div class="fq-arrow">+</div></div>
