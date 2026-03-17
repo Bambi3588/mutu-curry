@@ -375,13 +375,13 @@ body{padding-top:64px}
   /* ── SEC 共通 ── */
   .sec-label{font-size:.52rem;letter-spacing:.3em}
   .sec-title{font-size:clamp(1.4rem,6.5vw,1.9rem);margin-bottom:1.2rem;line-height:1.45}
-  .sec-body{font-size:clamp(.82rem,3.8vw,.92rem);line-height:1.85;text-align:left}
+  .sec-body{font-size:clamp(.84rem,3.8vw,.92rem);line-height:1.8;text-align:left}
 
   /* ── A. WHY ── */
   .sec-why{grid-template-columns:1fr}
   .sec-why-img{height:240px}
   .sec-why-img::after{display:none}
-  .sec-why-body{padding:3rem 1.5rem}
+  .sec-why-body{padding:2.5rem 1.2rem}
   .quote-block{font-size:1rem;padding:1.3rem 1.2rem;margin:1.5rem 0}
   .quote-block::before{font-size:3.5rem}
 
@@ -394,7 +394,7 @@ body{padding-top:64px}
   .sec-problem{padding:4rem 1.5rem}
   .sec-problem::before{display:none}
   .prob-grid{grid-template-columns:1fr;gap:1rem;margin:2rem 0}
-  .prob-card{padding:1.5rem 1.2rem}
+  .prob-card{padding:1.4rem 1.2rem}
   .prob-card::before{display:none}
   .prob-card .p-title{font-size:clamp(.9rem,3.8vw,1rem)}
   .prob-card .p-desc{font-size:clamp(.75rem,3.2vw,.85rem);line-height:1.75}
@@ -402,7 +402,7 @@ body{padding-top:64px}
   /* ── パラレルバンド ── */
   .parallax-band{height:180px}
   .parallax-band-img{background-attachment:scroll}
-  .pb-text{font-size:clamp(.95rem,4.5vw,1.3rem);line-height:1.65}
+  .pb-text{font-size:clamp(.9rem,4.2vw,1.2rem);line-height:1.6}
 
   /* ── D. SOLUTION ── */
   .sec-solution{padding:4rem 1.5rem}
@@ -509,6 +509,19 @@ body{padding-top:64px}
   .rh-sub br{display:none}
   .rh-sub{font-size:clamp(.72rem,3vw,.82rem);line-height:1.7}
 
+  .bf-desc br{display:none}
+  /* 全sec-body スマホ統一 */
+  p.sec-body{text-align:left !important;font-size:clamp(.84rem,3.8vw,.93rem) !important}
+  .sec-solution-inner p.sec-body{text-align:left !important;max-width:100% !important}
+  .sec-chain-body p.sec-body{text-align:left !important}
+
+  /* prob-card brも念のため */
+  .p-desc br{display:none}
+  .p-desc{font-size:clamp(.82rem,3.5vw,.9rem);line-height:1.75}
+
+  /* quote-block */
+  .quote-block{font-size:clamp(.88rem,3.8vw,1rem) !important}
+
 }
 </style>
 </head>
@@ -564,8 +577,8 @@ body{padding-top:64px}
   <div class="sec-why-body">
     <div class="sec-label reveal">WHY CURRY</div>
     <h2 class="sec-title reveal">なぜ〆に<span class="hl">カレー</span>なのか</h2>
-    <p class="sec-body reveal d1">炭火で焼いた香ばしい鶏の脂の香りが漂う店内。<br>焼き鳥屋の味覚の中心は鶏肉の旨味とタレの甘さです。<br>つまみの多くは枝豆、冷奴、漬物——いわば<strong>和の延長線にある料理</strong>が中心です。</p>
-    <p class="sec-body reveal d2">そこへ、スパイスの香りが加わると店内の空気が一気に変わります。<br>それまでとは違う香りが、もう一度食欲を呼び起こすのです。</p>
+    <p class="sec-body reveal d1">炭火で焼いた香ばしい鶏の脂の香りが漂う店内。焼き鳥屋の味覚の中心は鶏肉の旨味とタレの甘さです。つまみの多くは枝豆、冷奴、漬物——いわば<strong>和の延長線にある料理</strong>が中心です。</p>
+    <p class="sec-body reveal d2">そこへ、スパイスの香りが加わると店内の空気が一気に変わります。それまでとは違う香りが、もう一度食欲を呼び起こすのです。</p>
     <div class="quote-block reveal d3">
       「焼き鳥のあとに、スパイスカレー」<br>
       <span style="font-size:.85rem;color:rgba(245,237,224,.7)">——カレーは一皿が、もう一皿を呼ぶ料理。</span>
@@ -579,8 +592,8 @@ body{padding-top:64px}
   <div class="sec-chain-overlay"></div>
   <div class="sec-chain-body">
     <div class="sec-label reveal">THE CHAIN EFFECT</div>
-    <div class="chain-big reveal d1">蕎麦屋の<span>カレーうどん</span>と同じことが<br>焼き鳥屋で起きる</div>
-    <p class="sec-body reveal d2" style="color:rgba(245,237,224,.75);font-size:1rem;">一人が食べ始めると、スパイスの香りが店内に広がり、<br>隣のお客さまも思わず注文してしまう——あの連鎖注文の現象です。<br>カレーは香りで売れる料理。<br>その香りが、あなたの店の新しい武器になります。</p>
+    <div class="chain-big reveal d1">蕎麦屋の<span>カレーうどん</span>と同じことが焼き鳥屋で起きる</div>
+    <p class="sec-body reveal d2" style="color:rgba(245,237,224,.75);">一人が食べ始めると、スパイスの香りが店内に広がり、隣のお客さまも思わず注文してしまう——あの連鎖注文の現象です。カレーは香りで売れる料理。その香りが、あなたの店の新しい武器になります。</p>
     <div class="chain-tag reveal d3">✦ カレーは香りで売れる料理 ✦</div>
   </div>
 </div>
@@ -589,13 +602,13 @@ body{padding-top:64px}
 <section class="sec-problem">
   <div class="sec-problem-inner">
     <div class="sec-label reveal">THE PROBLEM</div>
-    <h2 class="sec-title reveal">しかし、カレーには<span style="color:var(--spice)">大きな問題があります</span></h2>
-    <p class="sec-body reveal d1" style="color:var(--mist)">カレーは美味しい料理です。<br>同時に<strong style="color:#fff">仕込みが極めて重い料理</strong>でもあります。</p>
+    <h2 class="sec-title reveal">しかし、カレーには<br><span style="color:var(--spice)">大きな問題があります</span></h2>
+    <p class="sec-body reveal d1" style="color:var(--mist)">カレーは美味しい料理です。同時に<strong style="color:#fff">仕込みが極めて重い料理</strong>でもあります。</p>
     <div class="prob-grid">
-      <div class="prob-card reveal d1"><div class="p-title">大量のスパイス管理</div><div class="p-desc">種類ごとの調達・分量管理・香りのバランス調整が必要。<br>専門知識なしには難しい。</div></div>
-      <div class="prob-card reveal d2"><div class="p-title">多工程・長時間の煮込み</div><div class="p-desc">玉ねぎの飴色炒めから始まり、完成まで数時間。<br>仕込みに丸一日かかることも。</div></div>
-      <div class="prob-card reveal d3"><div class="p-title">設備と初期投資</div><div class="p-desc">大きな鍋、大量のスパイス、<br>食材仕入れルートの新規開拓が必要。</div></div>
-      <div class="prob-card reveal d4"><div class="p-title">スパイスの専門知識</div><div class="p-desc">クミン、コリアンダー、カルダモン——<br>それぞれの特性を理解するには時間がかかる。</div></div>
+      <div class="prob-card reveal d1"><div class="p-title">大量のスパイス管理</div><div class="p-desc">種類ごとの調達・分量管理・香りのバランス調整が必要。専門知識なしには難しい。</div></div>
+      <div class="prob-card reveal d2"><div class="p-title">多工程・長時間の煮込み</div><div class="p-desc">玉ねぎの飴色炒めから始まり、完成まで数時間。仕込みに丸一日かかることも。</div></div>
+      <div class="prob-card reveal d3"><div class="p-title">設備と初期投資</div><div class="p-desc">大きな鍋、大量のスパイス、食材仕入れルートの新規開拓が必要。</div></div>
+      <div class="prob-card reveal d4"><div class="p-title">スパイスの専門知識</div><div class="p-desc">クミン、コリアンダー、カルダモン——それぞれの特性を理解するには時間がかかる。</div></div>
     </div>
   </div>
 </section>
@@ -618,7 +631,7 @@ body{padding-top:64px}
       <div class="need-pill reveal d2"><span class="np-icon">🫕</span>小鍋</div>
       <div class="need-pill reveal d3"><span class="np-icon">🔥</span>火（熱源）</div>
     </div>
-    <p class="sec-body reveal" style="text-align:center;max-width:600px;margin:0 auto 2rem">ソースを温め鶏肉を入れるだけ。<br>これで本格スパイスカレーが完成します。<br>しかも、このカレーは<strong>焼き鳥屋のロス対策</strong>にもなります。</p>
+    <p class="sec-body reveal" style="text-align:center;max-width:600px;margin:0 auto 2rem">ソースを温め鶏肉を入れるだけ。これで本格スパイスカレーが完成します。しかも、このカレーは<strong>焼き鳥屋のロス対策</strong>にもなります。</p>
     <div class="benefit-flow reveal">
       <div class="bf-item"><div class="bf-num">01</div><div class="bf-title">仕込み時間ゼロ</div><div class="bf-desc">スパイスの計量・炒め・煮込み不要。<br>ソースを温めるだけ。</div></div>
       <div class="bf-item"><div class="bf-num">02</div><div class="bf-title">追加食材なし</div><div class="bf-desc">廃棄予定の鶏肉も<br>そのまま使用できる。</div></div>
@@ -650,7 +663,7 @@ body{padding-top:64px}
     <div class="rev-highlight reveal">
       <div class="rh-label">〆カレーだけで月間</div>
       <div class="rh-num">88,500 ~ 147,500<span style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,9vw,3.5rem)">円</span></div>
-      <div class="rh-sub">仕込み時間 <strong style="color:#fff">0分</strong> ／ 追加食材 <strong style="color:#fff">なし</strong><br>既存オペレーション <strong style="color:#fff">変更なし</strong></div>
+      <div class="rh-sub">仕込み時間 <strong style="color:#fff">0分</strong> ／ 追加食材 <strong style="color:#fff">なし</strong> ／ 既存オペレーション <strong style="color:#fff">変更なし</strong></div>
     </div>
   </div>
 </section>
@@ -689,7 +702,7 @@ body{padding-top:64px}
     <div class="time-strip reveal">
       <div>
         <div style="font-size:1.3rem">約5分で提供できます</div>
-        <div style="font-size:.8rem;opacity:.7;font-weight:400;margin-top:.2rem">仕込みなし / 特別な技術なし / 既存厨房そのまま</div>
+        <div style="font-size:clamp(.65rem,3vw,.8rem);opacity:.7;font-weight:400;margin-top:.3rem">仕込みなし　/　特別な技術なし　/　既存厨房そのまま</div>
       </div>
     </div>
   </div>
@@ -699,7 +712,7 @@ body{padding-top:64px}
 <div class="parallax-band">
   <div class="parallax-band-img" style="background-image:url('wband2.png');background-attachment:fixed"></div>
   <div class="parallax-band-overlay" style="background:rgba(10,6,2,.62)">
-    <div class="pb-text reveal">化学調味料不使用 × グルテンフリー<br><span>スパイスの香りを活かした、軽やかな本格カレー</span></div>
+    <div class="pb-text reveal">化学調味料不使用 × グルテンフリー<span>スパイスの香りを活かした、軽やかな本格カレー</span></div>
   </div>
 </div>
 
@@ -707,20 +720,20 @@ body{padding-top:64px}
 <div class="sec-quality">
   <div class="sec-quality-body">
     <div class="sec-label reveal">QUALITY & ARRANGE</div>
-    <h2 class="sec-title reveal" style="font-size:clamp(1.4rem,2.5vw,2.2rem);white-space:nowrap;">焼き鳥屋だからできる<span class="hl">〆カレー</span></h2>
+    <h2 class="sec-title reveal">焼き鳥屋だからできる<br><span class="hl">〆カレー</span></h2>
     <div class="tag-pills reveal">
       <span class="tag-pill">化学調味料不使用</span>
       <span class="tag-pill">グルテンフリー</span>
       <span class="tag-pill">小麦粉不使用</span>
       <span class="tag-pill">中辛</span>
     </div>
-    <p class="sec-body reveal d1">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。<br>お店にある食材を加えるだけで<strong>貴店だけの〆カレー</strong>が完成します。</p>
+    <p class="sec-body reveal d1">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。お店にある食材を加えるだけで<strong>貴店だけの〆カレー</strong>が完成します。</p>
     <div class="topping-grid reveal d2">
       <div class="topping-chip"><span class="tc-icon">🍗</span>様々な部位の鶏肉</div>
       <div class="topping-chip"><span class="tc-icon">🥚</span>温泉卵</div>
       <div class="topping-chip"><span class="tc-icon">🍢</span>つくね</div>
     </div>
-    <p class="sec-body reveal d3" style="color:var(--smoke);font-size:.88rem">生クリームやココナッツミルクを加えることで、<br>貴店オリジナルのカレーにアレンジすることも可能です。</p>
+    <p class="sec-body reveal d3" style="color:var(--smoke)">生クリームやココナッツミルクを加えることで、貴店オリジナルのカレーにアレンジすることも可能です。</p>
   </div>
   <div class="sec-quality-img reveal right">
     <img src="wquality.png" alt="スパイスカレー">
@@ -731,8 +744,8 @@ body{padding-top:64px}
 <section class="sec-profit">
   <div class="sec-profit-inner">
     <div class="sec-label reveal">PROFIT ANALYSIS</div>
-    <h2 class="sec-title reveal">大事なのは<span style="color:var(--gold)">減価率より粗利益</span></h2>
-    <p class="sec-body reveal d1" style="color:var(--mist)">飲食店では「減価率」で判断しがちですが、<br>実際の経営で重要なのは<strong style="color:#fff">1皿でいくら儲かるのか</strong>です。</p>
+    <h2 class="sec-title reveal">大事なのは<br><span style="color:var(--gold)">減価率より粗利益</span></h2>
+    <p class="sec-body reveal d1" style="color:var(--mist)">飲食店では「減価率」で判断しがちですが、実際の経営で重要なのは<strong style="color:#fff">1皿でいくら儲かるのか</strong>です。</p>
     <div class="compare-grid">
       <div class="compare-card reveal d1">
         <div class="cc-name">〆 親子丼（定番）</div>
@@ -777,7 +790,7 @@ body{padding-top:64px}
       <div class="size-seg mid"><div class="ss-cat">標準</div><div class="ss-name">1人前</div><div class="ss-g">200<span class="ss-unit">g</span></div></div>
       <div class="size-seg"><div class="ss-cat">しっかり</div><div class="ss-name">大盛り</div><div class="ss-g">250<span class="ss-unit">g</span></div></div>
     </div>
-    <p class="sec-body reveal" style="text-align:center;color:var(--smoke);font-size:.88rem;margin-top:1.5rem">ご注文はLINEまたはメールで受け付け。<br>必要な数量をお知らせいただければ、冷凍便で即日発送いたします。</p>
+    <p class="sec-body reveal" style="color:var(--smoke);margin-top:1.5rem">ご注文はLINEまたはメールで受け付け。必要な数量をお知らせいただければ、冷凍便で即日発送いたします。</p>
   </div>
 </section>
 
@@ -818,14 +831,14 @@ body{padding-top:64px}
   <div class="sec-cta-body">
     <div class="cta-pretitle reveal">MUTU-CURRY.COM</div>
     <h2 class="cta-title reveal">焼き鳥屋の〆は、<br><span class="ct-fire">カレーになる。</span></h2>
-    <p class="cta-sub reveal d1">仕込み不要。<br>特別な設備不要。<br>特別な技術不要。<br>焼き鳥屋にあるもので〆の売上を一つ増やす。</p>
+    <p class="cta-sub reveal d1">仕込み不要。特別な設備不要。特別な技術不要。<br>焼き鳥屋にあるもので〆の売上を一つ増やす。</p>
     <div class="sample-badge reveal d2">✦ 無料サンプルご用意しています ✦</div>
     <div class="cta-btns reveal d3">
       <a href="https://lin.ee/XXXXXXX" class="btn-line" target="_blank" rel="noopener">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.8 2 10.5c0 3.27 2.13 6.15 5.3 7.77L6.5 22l4.23-2.2c.42.06.84.1 1.27.1C17.52 19.9 22 16.1 22 10.5 22 5.8 17.52 2 12 2z"/></svg>
         LINEで無料サンプルを申し込む
       </a>
-      <a href="/cdn-cgi/l/email-protection#a8c1c6cec7e8c5dddcdd85cbdddadad186cbc7c5" class="btn-mail">✉ メールでお問い合わせ</a>
+      <a href="mailto:info@mutu-curry.com" class="btn-mail">✉ メールでお問い合わせ</a>
     </div>
   </div>
 </section>
