@@ -533,9 +533,9 @@ body{padding-top:64px}
     <div class="fnav-logo">
       <img src="wlogo.png" alt="ムトゥカレー" class="fnav-logo-img">
     </div>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqN1H4SEJh3Yq6Prkhw9AUQfTCp9_a7jUcZQwmNPCNho1kgw/viewform" class="btn-fnav" target="_blank" rel="noopener">
+    <a href="#cta" class="btn-fnav" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'});return false;">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.8 2 10.5c0 3.27 2.13 6.15 5.3 7.77L6.5 22l4.23-2.2c.42.06.84.1 1.27.1C17.52 19.9 22 16.1 22 10.5 22 5.8 17.52 2 12 2z"/></svg>
-      無料サンプルを請求する
+      無料サンプルを申し込む
     </a>
   </nav>
 </div>
@@ -834,18 +834,18 @@ body{padding-top:64px}
     <p class="cta-sub reveal d1">仕込み不要。特別な設備不要。特別な技術不要。<br>焼き鳥屋にあるもので〆の売上を一つ増やす。</p>
     <div class="sample-badge reveal d2">✦ 無料サンプルご用意しています ✦</div>
     <div class="cta-btns reveal d3">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqN1H4SEJh3Yq6Prkhw9AUQfTCp9_a7jUcZQwmNPCNho1kgw/viewform" class="btn-fire" target="_blank" rel="noopener">無料サンプルを申し込む</a>
       <a href="https://lin.ee/rrUHglK" class="btn-line" target="_blank" rel="noopener">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.8 2 10.5c0 3.27 2.13 6.15 5.3 7.77L6.5 22l4.23-2.2c.42.06.84.1 1.27.1C17.52 19.9 22 16.1 22 10.5 22 5.8 17.52 2 12 2z"/></svg>
-        LINEで無料サンプルを申し込む
+        LINE無料資料を請求
       </a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqN1H4SEJh3Yq6Prkhw9AUQfTCp9_a7jUcZQwmNPCNho1kgw/viewform" class="btn-mail" target="_blank" rel="noopener">✉ フォームで申し込む</a>
     </div>
   </div>
 </section>
 
 <footer><p>ムトゥカレー — <a href="https://mutu-curry.com" style="color:rgba(255,255,255,.3);text-decoration:none;letter-spacing:.1em">mutu-curry.com</a></p></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* カスタムカーソル */
 const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
 let mx=0,my=0,rx=0,ry=0;
@@ -859,11 +859,15 @@ document.querySelectorAll('a,button,.faq-q').forEach(el=>{
 /* スクロールリビール */
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('up')});
-},{threshold:.1});
+},{threshold:0,rootMargin:"0px 0px -20px 0px"});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
 /* FAQ アコーディオン */
 document.querySelectorAll('.faq-q').forEach(q=>{
   q.addEventListener('click',()=>{
     const item=q.parentElement,wasOpen=item.classList.contains('open');
-    document.
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+</script>
