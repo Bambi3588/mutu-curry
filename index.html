@@ -89,6 +89,7 @@ body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);overflow-x:hi
 .reveal.left{opacity:0;transform:translateX(-36px)}
 .reveal.left.up{opacity:1;transform:translateX(0)}
 .reveal.right{opacity:0;transform:translateX(36px)}
+br.sp-only{display:none}
 .reveal.right.up{opacity:1;transform:translateX(0)}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
 
@@ -194,7 +195,7 @@ body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);overflow-x:hi
 .sec-quality-img img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease;display:block}
 .sec-quality:hover .sec-quality-img img{transform:scale(1.05)}
 .sec-quality-img::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--cream) 0%,transparent 30%);z-index:1}
-.tag-pills{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.5rem 0 2rem}
+.tag-pills{display:flex;flex-wrap:nowrap;gap:.7rem;margin:1.5rem 0 2rem}
 .tag-pill{border:1.5px solid var(--ember);color:var(--ember);font-size:.8rem;font-weight:700;letter-spacing:.1em;padding:.45em 1.1em;transition:all .25s;cursor:default}
 .tag-pill:hover{background:var(--ember);color:#fff}
 .topping-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:2rem 0}
@@ -439,7 +440,7 @@ body{padding-top:64px}
   .sec-quality-body{padding:3rem 1.5rem;order:2}
   .sec-quality-img{height:240px;order:1}
   .sec-quality-img::before{display:none}
-  .tag-pills{gap:.5rem;margin:1rem 0 1.5rem}
+  .tag-pills{gap:.5rem;margin:1rem 0 1.5rem;flex-wrap:wrap}
   .tag-pill{font-size:.72rem;padding:.4em .9em}
   .topping-grid{gap:.6rem}
   .topping-chip{padding:.9rem .5rem;font-size:.75rem}
@@ -455,7 +456,7 @@ body{padding-top:64px}
   .cc-stat.profit .cs-val{font-size:2.3rem}
   .cost-box{padding:1.5rem;margin:1.5rem 0}
   .profit-msg{padding:1.8rem 1.2rem}
-  .profit-msg p{font-size:clamp(.78rem,3.4vw,.88rem);line-height:2;text-align:left}
+  .profit-msg p{font-size:clamp(.72rem,3.1vw,.82rem);line-height:1.9;text-align:center}
 
   /* ── I. STORAGE ── */
   .sec-storage{padding:4rem 1.5rem}
@@ -502,7 +503,7 @@ body{padding-top:64px}
   p.sec-body{text-align:left !important;font-size:clamp(.84rem,3.8vw,.93rem)}
   .sec-chain-body{text-align:left}
   .sec-chain-body p.sec-body{text-align:left !important}
-  .profit-msg p{text-align:left !important}
+  .profit-msg p{text-align:center !important}
   .pb-text{text-align:left !important;padding:0 1.5rem}
   .cta-sub{text-align:left !important}
   .chain-big{text-align:left !important}
@@ -761,7 +762,7 @@ body{padding-top:64px}
       <div class="cost-row total"><span class="cr-l">合計原価</span><span class="cr-v">約530円</span></div>
     </div>
     <div class="profit-msg reveal">
-      <p>減価率は高くても、<span>残るお金はカレーの方が多い。</span><br>串打ちの端材を使えば原価はさらに下がります。<br><span>〆カレーは粗利を生みながら、<br>ロスも減らすメニューなのです。</span></p>
+      <p>減価率は高くても、<span>残るお金はカレーの方が多い。</span><br class="sp-only">串打ちの端材を使えば原価はさらに下がります。<br class="sp-only"><span>〆カレーは粗利を生みながら、ロスも減らすメニューなのです。</span></p>
     </div>
   </div>
 </section>
