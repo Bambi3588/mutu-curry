@@ -203,6 +203,26 @@ br.sp-only{display:none}
 .topping-chip .tc-icon{font-size:1.5rem;display:block;margin-bottom:.4rem}
 .topping-chip:hover{border-color:var(--spice);transform:translateY(-3px);box-shadow:0 6px 20px rgba(232,101,26,.15)}
 
+/* ═══ G2. CUSTOMIZE ═══ */
+.sec-custom{background:var(--paper);padding:7rem 2rem}
+.sec-custom-inner{max-width:960px;margin:0 auto}
+.custom-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:3rem 0}
+.custom-card{background:#fff;border:1px solid var(--mist);padding:2rem 1.8rem;transition:transform .3s,box-shadow .3s}
+.custom-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(201,74,26,.1)}
+.custom-card-highlight{background:var(--char);border-color:var(--ember)}
+.custom-card-highlight .custom-card-title{color:var(--cream)}
+.custom-card-highlight .custom-recipe-text{color:rgba(245,237,224,.85);font-size:.95rem;line-height:1.9;margin-top:1rem}
+.custom-card-highlight .custom-recipe-text strong{color:var(--gold-lt)}
+.custom-card-head{display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--mist)}
+.custom-card-highlight .custom-card-head{border-bottom-color:rgba(255,255,255,.1)}
+.custom-icon{font-size:1.6rem;flex-shrink:0}
+.custom-card-title{font-family:'Shippori Mincho B1',serif;font-size:1rem;font-weight:700;color:var(--char)}
+.custom-list{list-style:none;padding:0;margin:0 0 1.2rem;display:flex;flex-direction:column;gap:.6rem}
+.custom-list li{font-size:.88rem;color:var(--char);padding-left:1em;position:relative;line-height:1.6}
+.custom-list li::before{content:'・';position:absolute;left:0;color:var(--ember)}
+.custom-sub{color:var(--smoke);font-size:.8rem}
+.custom-merit{font-size:.82rem;font-weight:700;color:var(--ember);background:rgba(201,74,26,.06);border-left:3px solid var(--ember);padding:.5em .8em;margin-top:.8rem}
+
 /* ═══ H. PROFIT（ダーク） ═══ */
 .sec-profit{background:var(--char);padding:7rem 2rem;position:relative;overflow:hidden}
 .sec-profit::after{content:'¥';position:absolute;right:-2rem;top:50%;transform:translateY(-50%);font-family:'Bebas Neue',sans-serif;font-size:22rem;color:rgba(255,255,255,.025);line-height:1;pointer-events:none}
@@ -445,6 +465,16 @@ body{padding-top:64px}
   .topping-grid{gap:.6rem}
   .topping-chip{padding:.9rem .5rem;font-size:.75rem}
   .topping-chip .tc-icon{font-size:1.2rem}
+
+  /* ── G2. CUSTOMIZE ── */
+  .sec-custom{padding:4rem 1.5rem}
+  .custom-grid{grid-template-columns:1fr;gap:1.2rem;margin:2rem 0}
+  .custom-card{padding:1.5rem 1.2rem}
+  .custom-card-title{font-size:.92rem}
+  .custom-list li{font-size:.82rem}
+  .custom-sub{font-size:.75rem}
+  .custom-merit{font-size:.78rem}
+  .custom-card-highlight .custom-recipe-text{font-size:.88rem}
 
   /* ── H. PROFIT ── */
   .sec-profit{padding:4rem 1.5rem}
@@ -732,6 +762,71 @@ body{padding-top:64px}
     <img src="wquality.png" alt="スパイスカレー">
   </div>
 </div>
+
+<!-- ═══════ G2. カスタマイズ ═══════ -->
+<section class="sec-custom">
+  <div class="sec-custom-inner">
+    <div class="sec-label reveal">CUSTOMIZE</div>
+    <h2 class="sec-title reveal">貴店だけの<span class="hl">オリジナルカレー</span>へ</h2>
+    <p class="sec-body reveal d1">本商品は単一メニューとしてだけでなく、<br>各店舗ごとのオリジナルメニュー展開が可能です。</p>
+
+    <div class="custom-grid reveal d2">
+
+      <!-- 具材アレンジ -->
+      <div class="custom-card">
+        <div class="custom-card-head">
+          <span class="custom-icon">🍗</span>
+          <div class="custom-card-title">具材アレンジ</div>
+        </div>
+        <ul class="custom-list">
+          <li>ポークカレー</li>
+          <li>エビカレー</li>
+          <li>合い挽き肉カレー</li>
+          <li>キノコカレー</li>
+        </ul>
+        <div class="custom-merit">👉 既存・余剰食材の活用が可能</div>
+      </div>
+
+      <!-- ソースアレンジ -->
+      <div class="custom-card">
+        <div class="custom-card-head">
+          <span class="custom-icon">🫕</span>
+          <div class="custom-card-title">ソースアレンジ</div>
+        </div>
+        <ul class="custom-list">
+          <li>生クリーム <span class="custom-sub">→ まろやか・リッチ系</span></li>
+          <li>ココナッツミルク <span class="custom-sub">→ エスニック寄り</span></li>
+          <li>バター <span class="custom-sub">→ コク強化</span></li>
+          <li>チーズ <span class="custom-sub">→ 濃厚系</span></li>
+        </ul>
+        <div class="custom-merit">👉 同一原料から複数メニューを展開可能</div>
+      </div>
+
+      <!-- 原価構造 -->
+      <div class="custom-card">
+        <div class="custom-card-head">
+          <span class="custom-icon">💰</span>
+          <div class="custom-card-title">原価を変えずにメニュー増</div>
+        </div>
+        <ul class="custom-list">
+          <li>原価構造は大きく変えずに</li>
+          <li>メニュー数だけ増やせる</li>
+        </ul>
+        <div class="custom-merit">👉 売上の取りこぼしを防ぐ設計</div>
+      </div>
+
+      <!-- レシピ提供 -->
+      <div class="custom-card custom-card-highlight">
+        <div class="custom-card-head">
+          <span class="custom-icon">📋</span>
+          <div class="custom-card-title">オリジナルレシピを無償提供</div>
+        </div>
+        <p class="custom-recipe-text">各店舗のコンセプトや客層に合わせた<br>オリジナルレシピを<strong>無償で作成・提供</strong>します</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- ═══════ H. 利益 ═══════ -->
 <section class="sec-profit">
