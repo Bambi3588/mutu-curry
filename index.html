@@ -90,6 +90,7 @@ body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);overflow-x:hi
 .reveal.left.up{opacity:1;transform:translateX(0)}
 .reveal.right{opacity:0;transform:translateX(36px)}
 br.sp-only{display:none}
+br.pc-only{display:inline}
 .reveal.right.up{opacity:1;transform:translateX(0)}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
 
@@ -463,7 +464,8 @@ body{padding-top:64px}
   .sec-quality-body{padding:3rem 1.5rem;order:2}
   .sec-quality-img{height:240px;order:1}
   .sec-quality-img::before{display:none}
-  .tag-pills{gap:.5rem;margin:1rem 0 1.5rem;flex-wrap:wrap}
+  .tag-pills{gap:.5rem;margin:1rem 0 1.5rem;flex-wrap:wrap;max-width:100%}
+  .tag-pill{flex-shrink:0}
   .tag-pill{font-size:.72rem;padding:.4em .9em}
   .topping-grid{gap:.6rem}
   .topping-chip{padding:.9rem .5rem;font-size:.75rem}
@@ -544,6 +546,7 @@ body{padding-top:64px}
   .profit-judge{font-size:clamp(.72rem,3.1vw,.8rem) !important;line-height:1.85}
   .faq-a-sm{font-size:clamp(.72rem,3vw,.8rem) !important}
   br.sp-only{display:inline}
+  br.pc-only{display:none}
 
   .pb-text{padding:0 1.5rem}
   .rh-sub{font-size:clamp(.72rem,3vw,.82rem);line-height:1.7}
@@ -808,7 +811,7 @@ body{padding-top:64px}
     <div class="custom-recipe2 reveal d3">
       <div class="custom-recipe2-badge">無料サンプル請求者 限定サービス</div>
       <div class="custom-recipe2-title">各店舗のコンセプト・客層に合わせた<br><span>「オリジナルレシピ」を<br class="sp-only">無償で作成・提供</span></div>
-      <p class="custom-recipe2-sub">他店との差別化や、季節・限定メニューの<br class="sp-only">展開もお任せください。<br class="sp-only">売上の取りこぼしを防ぐため、<br class="sp-only">メニュー開発を全力でサポートします。</p>
+      <p class="custom-recipe2-sub">他店との差別化や、季節・限定メニューの展開もお任せください。<br class="pc-only">売上の取りこぼしを防ぐため、メニュー開発を全力でサポートします。</p>
       <div class="custom-recipe2-cond">【 ご利用条件 】<br>無料サンプルをご請求いただいた店舗様に限り、<br>オリジナルレシピを無償にてご提供いたします。</div>
       <div class="custom-recipe2-note">✦ まずは無料サンプルをご請求ください ✦</div>
     </div>
