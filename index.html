@@ -205,23 +205,24 @@ br.sp-only{display:none}
 
 /* ═══ G2. CUSTOMIZE ═══ */
 .sec-custom{background:var(--paper);padding:7rem 2rem}
-.sec-custom-inner{max-width:960px;margin:0 auto}
-.custom-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:3rem 0}
-.custom-card{background:#fff;border:1px solid var(--mist);padding:2rem 1.8rem;transition:transform .3s,box-shadow .3s}
-.custom-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(201,74,26,.1)}
-.custom-card-highlight{background:var(--char);border-color:var(--ember)}
-.custom-card-highlight .custom-card-title{color:var(--cream)}
-.custom-card-highlight .custom-recipe-text{color:rgba(245,237,224,.85);font-size:.95rem;line-height:1.9;margin-top:1rem}
-.custom-card-highlight .custom-recipe-text strong{color:var(--gold-lt)}
-.custom-card-head{display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--mist)}
-.custom-card-highlight .custom-card-head{border-bottom-color:rgba(255,255,255,.1)}
-.custom-icon{font-size:1.6rem;flex-shrink:0}
-.custom-card-title{font-family:'Shippori Mincho B1',serif;font-size:1rem;font-weight:700;color:var(--char)}
-.custom-list{list-style:none;padding:0;margin:0 0 1.2rem;display:flex;flex-direction:column;gap:.6rem}
-.custom-list li{font-size:.88rem;color:var(--char);padding-left:1em;position:relative;line-height:1.6}
-.custom-list li::before{content:'・';position:absolute;left:0;color:var(--ember)}
-.custom-sub{color:var(--smoke);font-size:.8rem}
-.custom-merit{font-size:.82rem;font-weight:700;color:var(--ember);background:rgba(201,74,26,.06);border-left:3px solid var(--ember);padding:.5em .8em;margin-top:.8rem}
+.sec-custom-inner{max-width:1000px;margin:0 auto}
+.sec-custom .sec-title{color:var(--char)}
+.custom-lead{font-size:clamp(.95rem,2.2vw,1.1rem);color:var(--char);line-height:1.9;margin-bottom:3rem;text-align:left;font-weight:700}
+.custom-cards-row{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-bottom:2.5rem}
+.custom-card2{background:#fff;padding:2.2rem 2rem;box-shadow:0 5px 20px rgba(0,0,0,.06);border-top:3px solid var(--ember)}
+.custom-card2-title{font-family:'Shippori Mincho B1',serif;font-size:1.1rem;font-weight:700;color:var(--ember);padding-bottom:.8rem;margin-bottom:1.2rem;border-bottom:2px solid var(--cream)}
+.custom-card2 ul{list-style:none;padding:0;margin:0 0 1.2rem;display:flex;flex-direction:column;gap:.5rem}
+.custom-card2 ul li{font-size:.95rem;color:var(--char);padding-left:1.2em;position:relative;line-height:1.9}
+.custom-card2 ul li::before{content:'・';position:absolute;left:0;color:var(--ember)}
+.custom-card2-sub{font-size:.88rem;color:var(--ember);font-weight:600}
+.custom-card2-merit{font-size:.88rem;font-weight:700;color:var(--ember);background:rgba(201,74,26,.06);border-left:3px solid var(--ember);padding:.6em 1em;margin-top:.8rem}
+.custom-recipe2{background:linear-gradient(135deg,#1e1710,#2a1a08);border:1px solid rgba(201,74,26,.5);padding:3.5rem 3rem;text-align:center;position:relative;overflow:hidden;margin-top:1rem}
+.custom-recipe2::before{content:'RECIPE';position:absolute;right:-1rem;top:50%;transform:translateY(-50%);font-family:'Bebas Neue',sans-serif;font-size:10rem;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
+.custom-recipe2-badge{display:inline-block;background:var(--ember);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.3em;padding:.4em 1.4em;margin-bottom:1.5rem}
+.custom-recipe2-title{font-family:'Shippori Mincho B1',serif;font-size:clamp(1.2rem,3vw,1.8rem);font-weight:800;color:#fff;line-height:1.6;margin-bottom:1rem}
+.custom-recipe2-title span{color:var(--gold-lt);border-bottom:2px solid var(--gold);padding-bottom:.05em}
+.custom-recipe2-sub{font-size:.92rem;color:rgba(245,237,224,.65);line-height:1.9;margin-bottom:1.5rem}
+.custom-recipe2-note{display:inline-block;background:rgba(200,154,46,.15);border:1px solid rgba(200,154,46,.4);color:var(--gold-lt);font-size:.82rem;font-weight:700;padding:.5em 1.5em;letter-spacing:.06em}
 
 /* ═══ H. PROFIT（ダーク） ═══ */
 .sec-profit{background:var(--char);padding:7rem 2rem;position:relative;overflow:hidden}
@@ -468,13 +469,16 @@ body{padding-top:64px}
 
   /* ── G2. CUSTOMIZE ── */
   .sec-custom{padding:4rem 1.5rem}
-  .custom-grid{grid-template-columns:1fr;gap:1.2rem;margin:2rem 0}
-  .custom-card{padding:1.5rem 1.2rem}
-  .custom-card-title{font-size:.92rem}
-  .custom-list li{font-size:.82rem}
-  .custom-sub{font-size:.75rem}
-  .custom-merit{font-size:.78rem}
-  .custom-card-highlight .custom-recipe-text{font-size:.88rem}
+  .custom-lead{font-size:.88rem;margin-bottom:2rem}
+  .custom-cards-row{grid-template-columns:1fr;gap:1.2rem;margin-bottom:1.8rem}
+  .custom-card2{padding:1.5rem 1.2rem}
+  .custom-card2-title{font-size:.95rem}
+  .custom-card2 ul li{font-size:.85rem}
+  .custom-card2-merit{font-size:.82rem}
+  .custom-recipe2{padding:2.2rem 1.4rem}
+  .custom-recipe2-title{font-size:clamp(1rem,4.5vw,1.4rem)}
+  .custom-recipe2-sub{font-size:.82rem}
+  .custom-recipe2-note{font-size:.75rem}
 
   /* ── H. PROFIT ── */
   .sec-profit{padding:4rem 1.5rem}
@@ -723,7 +727,7 @@ body{padding-top:64px}
       </div>
     </div>
     <div class="time-strip reveal">
-      <div>
+      <div style="text-align:center">
         <div style="font-size:1.3rem">約5分で提供できます</div>
         <div style="font-size:clamp(.65rem,3vw,.8rem);opacity:.7;font-weight:400;margin-top:.3rem">仕込みなし　/　特別な技術なし　/　既存厨房そのまま</div>
       </div>
@@ -767,64 +771,42 @@ body{padding-top:64px}
 <section class="sec-custom">
   <div class="sec-custom-inner">
     <div class="sec-label reveal">CUSTOMIZE</div>
-    <h2 class="sec-title reveal">貴店だけの<span class="hl">オリジナルカレー</span>へ</h2>
-    <p class="sec-body reveal d1">本商品は単一メニューとしてだけでなく、<br>各店舗ごとのオリジナルメニュー展開が可能です。</p>
+    <h2 class="sec-title reveal">原価はそのまま、<span class="hl">メニューは無限大</span></h2>
+    <p class="custom-lead reveal d1">単一商品ではなく、"広げられる"商品として導入いただけます。<br>店舗にある食材を少し足すだけで、客層に合わせたオリジナルメニューが完成します。</p>
 
-    <div class="custom-grid reveal d2">
+    <div class="custom-cards-row reveal d2">
 
       <!-- 具材アレンジ -->
-      <div class="custom-card">
-        <div class="custom-card-head">
-          <span class="custom-icon">🍗</span>
-          <div class="custom-card-title">具材アレンジ</div>
-        </div>
-        <ul class="custom-list">
-          <li>ポークカレー</li>
-          <li>エビカレー</li>
-          <li>合い挽き肉カレー</li>
-          <li>キノコカレー</li>
+      <div class="custom-card2">
+        <div class="custom-card2-title">■ 具材アレンジで広げる</div>
+        <ul>
+          <li>ポーク / エビ / 合い挽き肉</li>
+          <li>余剰野菜やキノコ類など</li>
         </ul>
-        <div class="custom-merit">👉 既存・余剰食材の活用が可能</div>
+        <div class="custom-card2-merit">👉 既存・余剰食材の活用が可能</div>
       </div>
 
       <!-- ソースアレンジ -->
-      <div class="custom-card">
-        <div class="custom-card-head">
-          <span class="custom-icon">🫕</span>
-          <div class="custom-card-title">ソースアレンジ</div>
-        </div>
-        <ul class="custom-list">
-          <li>生クリーム <span class="custom-sub">→ まろやか・リッチ系</span></li>
-          <li>ココナッツミルク <span class="custom-sub">→ エスニック寄り</span></li>
-          <li>バター <span class="custom-sub">→ コク強化</span></li>
-          <li>チーズ <span class="custom-sub">→ 濃厚系</span></li>
+      <div class="custom-card2">
+        <div class="custom-card2-title">■ ソースアレンジで変える</div>
+        <ul>
+          <li>生クリーム<br><span class="custom-card2-sub">→ まろやか・リッチ系に</span></li>
+          <li>ココナッツミルク<br><span class="custom-card2-sub">→ エスニック寄りに</span></li>
+          <li>バター / チーズ<br><span class="custom-card2-sub">→ コク強化・濃厚系に</span></li>
         </ul>
-        <div class="custom-merit">👉 同一原料から複数メニューを展開可能</div>
-      </div>
-
-      <!-- 原価構造 -->
-      <div class="custom-card">
-        <div class="custom-card-head">
-          <span class="custom-icon">💰</span>
-          <div class="custom-card-title">原価を変えずにメニュー増</div>
-        </div>
-        <ul class="custom-list">
-          <li>原価構造は大きく変えずに</li>
-          <li>メニュー数だけ増やせる</li>
-        </ul>
-        <div class="custom-merit">👉 売上の取りこぼしを防ぐ設計</div>
-      </div>
-
-      <!-- レシピ提供 -->
-      <div class="custom-card custom-card-highlight">
-        <div class="custom-card-head">
-          <span class="custom-icon">📋</span>
-          <div class="custom-card-title">オリジナルレシピを無償提供</div>
-        </div>
-        <p class="custom-recipe-text">各店舗のコンセプトや客層に合わせた<br>オリジナルレシピを<strong>無償で作成・提供</strong>します</p>
+        <div class="custom-card2-merit">👉 同一原料から複数メニューを展開</div>
       </div>
 
     </div>
+
+    <!-- レシピ無償提供（サンプル請求者限定） -->
+    <div class="custom-recipe2 reveal d3">
+      <div class="custom-recipe2-badge">無料サンプル請求者 限定サービス</div>
+      <div class="custom-recipe2-title">各店舗のコンセプト・客層に合わせた<br><span>「オリジナルレシピ」を無償で作成・提供</span></div>
+      <p class="custom-recipe2-sub">他店との差別化や、季節・限定メニューの展開もお任せください。<br>売上の取りこぼしを防ぐため、メニュー開発を全力でサポートします。</p>
+      <div class="custom-recipe2-note">✦ 無料サンプルを請求してご相談ください ✦</div>
+    </div>
+
   </div>
 </section>
 
