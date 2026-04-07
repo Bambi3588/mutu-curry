@@ -53,6 +53,7 @@ body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);overflow-x:hi
   flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
 }
+.hero-logo-new{width:300px;height:auto;object-fit:contain;opacity:0;animation:fadeUp .9s .3s forwards;filter:drop-shadow(0 0 25px rgba(201,74,26,.45)) brightness(1.05);}
 .hero-logo{
   width:150px;height:150px;
   object-fit:cover;border-radius:50%;
@@ -111,6 +112,11 @@ br.pc-only{display:inline}
 .sec-why-body{background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:6rem 5rem 6rem 3rem}
 .quote-block{margin:2.5rem 0;padding:1.8rem 2rem;background:var(--char);color:var(--cream);border-left:4px solid var(--spice);font-family:'Shippori Mincho B1',serif;font-size:clamp(1.1rem,2vw,1.35rem);font-weight:600;line-height:1.9;position:relative}
 .quote-block::before{content:'"';position:absolute;top:-.3em;left:.5rem;font-size:5rem;color:rgba(232,101,26,.15);font-family:Georgia,serif;line-height:1}
+
+/* ═══ A2. WHY YAKITORI ═══ */
+.sec-yakitori{background:var(--cream);padding:7rem 2rem}
+.sec-yakitori-inner{max-width:860px;margin:0 auto}
+.sec-yakitori .sec-label{border-color:var(--ember);color:var(--ember)}
 
 /* ═══ B. CHAIN（フォト背景） ═══ */
 .sec-chain{position:relative;min-height:70vh;display:flex;align-items:center;justify-content:flex-start;text-align:left;overflow:hidden;padding:7rem 4rem}
@@ -325,10 +331,12 @@ footer{background:#0a0702;padding:2.5rem 2rem;text-align:center;color:rgba(255,2
   box-shadow:0 4px 30px rgba(0,0,0,.4);
 }
 .fnav-logo{display:flex;align-items:center;gap:.6rem}
+.fnav-logo-new{height:40px;width:auto;object-fit:contain}
 .fnav-logo-img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(200,154,46,.5);}
 .fnav-logo-text{display:flex;flex-direction:column;gap:.1rem}
 
 .fnav-logo-img{height:44px;width:44px;object-fit:cover;border-radius:50%;border:2px solid rgba(200,154,46,.5);}
+.fnav-logo-new{height:36px;width:auto;object-fit:contain;filter:brightness(1);}
 
 .fnav-logo-img{
   height:44px;width:44px;
@@ -386,6 +394,7 @@ body{padding-top:64px}
   .hero-eyebrow{font-size:.55rem;letter-spacing:.2em;padding:.4em 1em;margin-bottom:1.5rem}
   .hero-content{flex-direction:column;gap:1.2rem;padding:2rem 1.2rem;align-items:center}
   .hero-logo{width:110px;height:110px}
+  .hero-logo-new{width:220px}
   .hero-text{text-align:center}
   .hero-formula{justify-content:center}
   .hero-title{font-size:clamp(1.7rem,8vw,2.4rem);line-height:1.3;margin-bottom:1rem}
@@ -414,6 +423,9 @@ body{padding-top:64px}
   .sec-why-body{padding:2.5rem 1.2rem}
   .quote-block{font-size:1rem;padding:1.3rem 1.2rem;margin:1.5rem 0}
   .quote-block::before{font-size:3.5rem}
+
+  /* ── A2. WHY YAKITORI ── */
+  .sec-yakitori{padding:4rem 1.5rem}
 
   /* ── B. CHAIN ── */
   .sec-chain{min-height:auto;padding:5rem 1.5rem;justify-content:flex-start;text-align:left}
@@ -541,6 +553,7 @@ body{padding-top:64px}
   .fixed-nav-bar{height:54px;padding:0 1rem}
   body{padding-top:54px}
   .fnav-logo-img{height:44px;width:44px;object-fit:cover;border-radius:50%;border:2px solid rgba(200,154,46,.5);}
+.fnav-logo-new{height:36px;width:auto;object-fit:contain;filter:brightness(1);}
 .fnav-name{font-size:.82rem}
   .fnav-sub{display:none}
   .btn-fnav{font-size:.75rem;padding:.6em 1em;letter-spacing:.06em}
@@ -574,7 +587,7 @@ body{padding-top:64px}
 <div class="fixed-nav">
   <nav class="fixed-nav-bar">
     <div class="fnav-logo">
-      <img src="wlogo.png" alt="ムトゥカレー" class="fnav-logo-img">
+      <img src="wlogo_white.png" alt="ムトゥカレー" class="fnav-logo-new">
     </div>
     <a href="#cta" class="btn-fnav" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'});return false;">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.8 2 10.5c0 3.27 2.13 6.15 5.3 7.77L6.5 22l4.23-2.2c.42.06.84.1 1.27.1C17.52 19.9 22 16.1 22 10.5 22 5.8 17.52 2 12 2z"/></svg>
@@ -594,7 +607,7 @@ body{padding-top:64px}
   <div class="hero-content">
     <!-- ロゴ（左） -->
     <div class="hero-logo-wrap">
-      <img src="wlogo.png" alt="ムトゥカレーロゴ" class="hero-logo">
+      <img src="wlogo_white.png" alt="ムトゥカレーロゴ" class="hero-logo-new">
     </div>
     <!-- テキスト（右） -->
     <div class="hero-text">
@@ -629,6 +642,22 @@ body{padding-top:64px}
   </div>
 </div>
 
+<!-- ═══════ A2. なぜ焼き鳥屋 ═══════ -->
+<section class="sec-yakitori">
+  <div class="sec-yakitori-inner">
+    <div class="sec-label reveal">WHY YAKITORI</div>
+    <h2 class="sec-title reveal">なぜ<span class="hl">焼き鳥屋</span>なのか？</h2>
+    <p class="sec-body reveal d1">
+      <span class="pc-text">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった内臓系、<br>つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する必要がないのが最大の特徴です。</span>
+      <span class="sp-text">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった内臓系、つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する必要がないのが最大の特徴です。</span>
+    </p>
+    <p class="sec-body reveal d2">
+      <span class="pc-text">また、仕込みで端折った端材や賞味期限前の部位を使うことで<br>ロス率を下げることにも繋がります。</span>
+      <span class="sp-text">また、仕込みで端折った端材や賞味期限前の部位を使うことで<br>ロス率を下げることにも繋がります。</span>
+    </p>
+  </div>
+</section>
+
 <!-- ═══════ B. 連鎖注文 ═══════ -->
 <div class="sec-chain">
   <div class="sec-chain-bg"></div>
@@ -640,6 +669,7 @@ body{padding-top:64px}
     <div class="chain-tag reveal d3">✦ カレーは香りで売れる料理 ✦</div>
   </div>
 </div>
+
 
 <!-- ═══════ C. 問題 ═══════ -->
 <section class="sec-problem">
@@ -664,25 +694,6 @@ body{padding-top:64px}
   </div>
 </div>
 
-<!-- ═══════ D. 解決策 ═══════ -->
-<section class="sec-solution">
-  <div class="sec-solution-inner">
-    <div class="sec-label reveal" style="margin:0 auto 1.5rem">THE SOLUTION</div>
-    <h2 class="sec-title reveal" style="text-align:center">必要なのは<span class="hl">これだけ</span></h2>
-    <div class="needs-row">
-      <div class="need-pill reveal d1"><span class="np-icon">🍗</span>鶏肉</div>
-      <div class="need-pill reveal d2"><span class="np-icon">🫕</span>小鍋</div>
-      <div class="need-pill reveal d3"><span class="np-icon">🔥</span>火（熱源）</div>
-    </div>
-    <p class="sec-body reveal solution-desc" style="max-width:600px;margin:0 auto 2rem"><span class="pc-text">ソースを温め鶏肉を入れるだけ。これで本格スパイスカレーが完成します。<br>しかも、このカレーは<strong>焼き鳥屋のロス対策</strong>にもなるのです。</span><span class="sp-text">ソースを温め鶏肉を入れるだけ。<br>これで本格スパイスカレーが完成します。<br>しかも、<br>このカレーは<strong>焼き鳥屋のロス対策</strong>にもなるのです。</span></p>
-    <div class="benefit-flow reveal">
-      <div class="bf-item"><div class="bf-num">01</div><div class="bf-title">仕込み時間ゼロ</div><div class="bf-desc">スパイスの計量・炒め・煮込み不要。<br>ソースを温めるだけ。</div></div>
-      <div class="bf-item"><div class="bf-num">02</div><div class="bf-title">追加食材なし</div><div class="bf-desc">廃棄予定の鶏肉も<br>そのまま使用できる。</div></div>
-      <div class="bf-item"><div class="bf-num">03</div><div class="bf-title">廃棄ロス削減</div><div class="bf-desc">端材がそのまま<br>売上になる仕組み。</div></div>
-      <div class="bf-item"><div class="bf-num">→</div><div class="bf-title">既存素材が<br class="pc-only">新しい売上へ</div><div class="bf-desc" style="color:rgba(255,255,255,.8)">オペレーションそのままで<br>収益を増やす構造。</div></div>
-    </div>
-  </div>
-</section>
 
 <!-- ═══════ F. 作り方 ═══════ -->
 <section class="sec-howto">
@@ -724,6 +735,42 @@ body{padding-top:64px}
   </div>
 </section>
 
+<!-- ═══════ G2. カスタマイズ ═══════ -->
+<section class="sec-custom">
+  <div class="sec-custom-inner">
+    <div class="sec-label reveal">CUSTOMIZE</div>
+    <h2 class="sec-title reveal"><span class="hl">メニューは無限大</span></h2>
+    <p class="custom-lead reveal d1"><span class="pc-text">店舗にある食材＋副材料を準備するだけで、<br>貴店だけのオリジナルメニューが完成します。<br>例えば、生クリームを加えまろやかな味わいに仕上げ、<br>ご飯でなくバゲットなどと合わせるのも良いでしょう。</span><span class="sp-text">店舗にある食材＋副材料を準備するだけで、<br>貴店だけのオリジナルメニューが完成します。<br>例えば、生クリームを加えまろやかな味わいに仕上げ、<br>ご飯でなくバゲットなどと合わせるのも良いでしょう。</span></p>
+
+    <div class="custom-cards-row reveal d2">
+
+      <!-- 具材アレンジ -->
+      <div class="custom-card2">
+        <div class="custom-card2-title">■ 具材アレンジで広げる</div>
+        <ul>
+          <li>もも肉、胸肉、レバー、ハツ、つくね</li>
+          <li>＋</li>
+          <li>その時在庫している、野菜やきのこ類など</li>
+        </ul>
+        <div class="custom-card2-merit">👉 既存・余剰食材の活用が可能</div>
+      </div>
+
+      <!-- ソースアレンジ -->
+      <div class="custom-card2">
+        <div class="custom-card2-title">■ ソースアレンジで変える</div>
+        <ul>
+          <li>生クリーム<br><span class="custom-card2-sub">→ まろやか・リッチ系に</span></li>
+          <li>ココナッツミルク<br><span class="custom-card2-sub">→ エスニック寄りに</span></li>
+          <li>バター / チーズ<br><span class="custom-card2-sub">→ コク強化・濃厚系に</span></li>
+        </ul>
+        <div class="custom-card2-merit">👉 同一原料から複数メニューを展開</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <!-- parallax 2 -->
 <div class="parallax-band">
   <div class="parallax-band-img" style="background-image:url('wband2.png');background-attachment:fixed"></div>
@@ -749,47 +796,13 @@ body{padding-top:64px}
       <div class="topping-chip"><span class="tc-icon">🥚</span>温泉卵</div>
       <div class="topping-chip"><span class="tc-icon">🍖</span>つくね</div>
     </div>
-    <p class="sec-body reveal d3" style="color:var(--smoke)"><span class="pc-text">生クリームやココナッツミルクを加えることで、貴店オリジナルのカレーに<br>アレンジすることも可能です。</span><span class="sp-text">生クリームやココナッツミルクを加えることで、<br>貴店オリジナルのカレーにアレンジすることも可能です。</span></p>
+    <p class="sec-body reveal d3" style="color:var(--smoke)"><span class="pc-text">化学調味料不使用ですので、過剰な旨みがございません。<br>つまり、今まで食べた繊細な焼き鳥やおつまみの余韻を損なうことがないのです。<br>またグルテンフリーですので、胃や腸への負担が少なく<br>「重い」「食べ過ぎた」ということにもなり辛いソースとなっております。<br>むしろ、クミンやコリアンダー、ターメリックといったスパイスの効能で、<br>消化を促進し食後の満足感を心地よく引き上げてくれるのです。</span><span class="sp-text">化学調味料不使用ですので、過剰な旨みがございません。<br>つまり、今まで食べた繊細な焼き鳥やおつまみの余韻を<br>損なうことがないのです。<br>またグルテンフリーですので、胃や腸への負担が少なく<br>「重い」「食べ過ぎた」ということにもなり辛いソースとなっております。<br>むしろ、クミンやコリアンダー、ターメリックといったスパイスの効能で、<br>消化を促進し食後の満足感を心地よく引き上げてくれるのです。</span></p>
   </div>
   <div class="sec-quality-img reveal right">
     <img src="wquality.png" alt="スパイスカレー">
   </div>
 </div>
 
-<!-- ═══════ G2. カスタマイズ ═══════ -->
-<section class="sec-custom">
-  <div class="sec-custom-inner">
-    <div class="sec-label reveal">CUSTOMIZE</div>
-    <h2 class="sec-title reveal"><span class="hl">メニューは無限大</span></h2>
-    <p class="custom-lead reveal d1"><span class="pc-text">単一商品ではなく、"広げられる"商品として導入いただけます。<br>店舗にある食材を少し足すだけで、客層に合わせたオリジナルメニューが完成します。</span><span class="sp-text">単一商品ではなく、"広げられる"商品として<br>導入いただけます。<br>店舗にある食材を少し足すだけで、<br>客層に合わせたオリジナルメニューが完成します。</span></p>
-
-    <div class="custom-cards-row reveal d2">
-
-      <!-- 具材アレンジ -->
-      <div class="custom-card2">
-        <div class="custom-card2-title">■ 具材アレンジで広げる</div>
-        <ul>
-          <li>ポーク / エビ / 合い挽き肉</li>
-          <li>余剰野菜やキノコ類など</li>
-        </ul>
-        <div class="custom-card2-merit">👉 既存・余剰食材の活用が可能</div>
-      </div>
-
-      <!-- ソースアレンジ -->
-      <div class="custom-card2">
-        <div class="custom-card2-title">■ ソースアレンジで変える</div>
-        <ul>
-          <li>生クリーム<br><span class="custom-card2-sub">→ まろやか・リッチ系に</span></li>
-          <li>ココナッツミルク<br><span class="custom-card2-sub">→ エスニック寄りに</span></li>
-          <li>バター / チーズ<br><span class="custom-card2-sub">→ コク強化・濃厚系に</span></li>
-        </ul>
-        <div class="custom-card2-merit">👉 同一原料から複数メニューを展開</div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
 
 <!-- ═══════ H. 利益 ═══════ -->
 <section class="sec-profit">
