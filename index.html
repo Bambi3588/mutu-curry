@@ -123,15 +123,15 @@ br.pc-only{display:inline}
 .quote-block{margin:2.5rem 0;padding:1.8rem 2rem;background:var(--char);color:var(--cream);border-left:4px solid var(--spice);font-family:'Shippori Mincho B1',serif;font-size:clamp(1.1rem,2vw,1.35rem);font-weight:600;line-height:1.9;position:relative}
 .quote-block::before{content:'"';position:absolute;top:-.3em;left:.5rem;font-size:5rem;color:rgba(232,101,26,.15);font-family:Georgia,serif;line-height:1}
 
-/* ═══ A2. WHY YAKITORI ═══ */
-.sec-yakitori{position:relative;padding:7rem 2rem;overflow:hidden;min-height:60vh;display:flex;align-items:center}
-.sec-yakitori-bg{position:absolute;inset:0;background:url('wyakitori.png') center/cover no-repeat;transform:scale(1.05);transition:transform 8s ease}
-.sec-yakitori:hover .sec-yakitori-bg{transform:scale(1.08)}
-.sec-yakitori-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,6,2,.82) 0%,rgba(30,15,5,.75) 60%,rgba(10,6,2,.88) 100%)}
-.sec-yakitori-inner{max-width:860px;margin:0 auto;position:relative;z-index:2;width:100%}
-.sec-yakitori .sec-label{border-color:var(--gold);color:var(--gold)}
-.sec-yakitori .sec-title{color:#fff}
-.sec-yakitori .sec-body{color:rgba(245,237,224,.82);word-break:keep-all;overflow-wrap:break-word}
+/* ═══ A2. WHY YAKITORI（画像左/テキスト右） ═══ */
+.sec-yakitori{display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
+.sec-yakitori-img{position:relative;overflow:hidden}
+.sec-yakitori-img img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease;display:block}
+.sec-yakitori:hover .sec-yakitori-img img{transform:scale(1.05)}
+.sec-yakitori-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,var(--paper))}
+.sec-yakitori-body{background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:6rem 5rem 6rem 3rem}
+.sec-yakitori-body .sec-label{border-color:var(--ember);color:var(--ember)}
+.sec-yakitori-body .sec-body{word-break:keep-all;overflow-wrap:break-word}
 
 /* ═══ B. CHAIN（フォト背景） ═══ */
 .sec-chain{position:relative;min-height:70vh;display:flex;align-items:center;justify-content:flex-start;text-align:left;overflow:hidden;padding:7rem 4rem}
@@ -445,8 +445,10 @@ body{padding-top:64px}
   .quote-block::before{font-size:3.5rem}
 
   /* ── A2. WHY YAKITORI ── */
-  .sec-yakitori{padding:4rem 1.5rem;min-height:auto}
-  .sec-yakitori-bg{background-attachment:scroll}
+  .sec-yakitori{grid-template-columns:1fr}
+  .sec-yakitori-img{height:240px}
+  .sec-yakitori-img::after{display:none}
+  .sec-yakitori-body{padding:2.5rem 1.2rem}
 
   /* ── B. CHAIN ── */
   .sec-chain{min-height:auto;padding:5rem 1.5rem;justify-content:flex-start;text-align:left}
@@ -665,14 +667,15 @@ body{padding-top:64px}
 
 <!-- ═══════ A2. なぜ焼き鳥屋 ═══════ -->
 <section class="sec-yakitori">
-  <div class="sec-yakitori-bg"></div>
-  <div class="sec-yakitori-overlay"></div>
-  <div class="sec-yakitori-inner">
+  <div class="sec-yakitori-img reveal left">
+    <img src="wyakitori.png" alt="焼き鳥屋の提灯">
+  </div>
+  <div class="sec-yakitori-body">
     <div class="sec-label reveal">WHY YAKITORI</div>
     <h2 class="sec-title reveal">なぜ<span class="hl">焼き鳥屋</span>なのか？</h2>
     <p class="sec-body reveal d1">
       <span class="pc-text">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった内臓系、<br>つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する必要がないのが最大の特徴です。</span>
-      <span class="sp-text">焼き鳥屋には、カレーと相性の良い食材がすでに<br>揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった内臓系、<br>つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する<br>必要がないのが最大の特徴です。</span>
+      <span class="sp-text">焼き鳥屋には、カレーと相性の良い食材がすでに<br>揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった内臓系<br>つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する<br>必要がないのが最大の特徴です。</span>
     </p>
     <p class="sec-body reveal d2">
       <span class="pc-text">また、仕込みで端折った端材や賞味期限前の部位を使うことで<br>ロス率を下げることにも繋がります。</span>
