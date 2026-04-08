@@ -234,6 +234,9 @@ br.pc-only{display:inline}
 .custom-card2 ul li::before{content:'・';position:absolute;left:0;color:var(--ember)}
 .custom-card2-sub{font-size:.88rem;color:var(--ember);font-weight:600}
 .custom-card2-merit{font-size:.88rem;font-weight:700;color:var(--ember);background:rgba(201,74,26,.06);border-left:3px solid var(--ember);padding:.6em 1em;margin-top:.8rem}
+.ingredient-list{display:flex;flex-direction:column;align-items:flex-start;gap:.6rem;margin:1rem 0;text-align:left}
+.ingredient-row{font-size:.92rem;font-weight:400;color:var(--char);line-height:1.7}
+.ingredient-plus{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--ember);line-height:1;display:block;text-align:left}
 .custom-recipe2{background:linear-gradient(135deg,#1e1710,#2a1a08);border:1px solid rgba(201,74,26,.5);padding:3.5rem 3rem;text-align:center;position:relative;overflow:hidden;margin-top:1rem}
 .custom-recipe2::before{content:'RECIPE';position:absolute;right:-1rem;top:50%;transform:translateY(-50%);font-family:'Bebas Neue',sans-serif;font-size:10rem;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
 .custom-recipe2-badge{display:inline-block;background:var(--ember);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.3em;padding:.4em 1.4em;margin-bottom:1.5rem}
@@ -756,11 +759,11 @@ body{padding-top:64px}
       <!-- 具材アレンジ -->
       <div class="custom-card2">
         <div class="custom-card2-title">■ 具材アレンジで広げる</div>
-        <ul>
-          <li>もも肉、胸肉、レバー、ハツ、つくね</li>
-          <li>＋</li>
-          <li>その時在庫している、野菜やきのこ類など</li>
-        </ul>
+        <div class="ingredient-list">
+          <div class="ingredient-row">もも肉、胸肉、レバー、ハツ、つくね</div>
+          <div class="ingredient-plus">＋</div>
+          <div class="ingredient-row">その時在庫している、野菜やきのこ類など</div>
+        </div>
         <div class="custom-card2-merit">👉 既存・余剰食材の活用が可能</div>
       </div>
 
@@ -805,7 +808,7 @@ body{padding-top:64px}
       <div class="topping-chip"><span class="tc-icon">🥚</span>温泉卵</div>
       <div class="topping-chip"><span class="tc-icon">🍖</span>つくね</div>
     </div>
-    <p class="sec-body reveal d3" style="color:var(--smoke)"><span class="pc-text">化学調味料不使用ですので、過剰な旨みがございません。<br>つまり、今まで食べた繊細な焼き鳥やおつまみの余韻を損なうことがないのです。<br>またグルテンフリーですので、胃や腸への負担が少なく<br>「重い」「食べ過ぎた」ということにもなり辛いソースとなっております。<br>むしろ、クミンやコリアンダー、ターメリックといったスパイスの効能で、<br>消化を促進し食後の満足感を心地よく引き上げてくれるのです。</span><span class="sp-text">化学調味料不使用ですので、過剰な旨みがございません。<br>つまり、今まで食べた繊細な焼き鳥やおつまみの余韻を<br>損なうことがないのです。<br>またグルテンフリーですので、胃や腸への負担が少なく<br>「重い」「食べ過ぎた」ということにもなり辛いソースとなっております。<br>むしろ、クミンやコリアンダー、ターメリックといったスパイスの効能で、<br>消化を促進し食後の満足感を心地よく引き上げてくれるのです。</span></p>
+    <p class="sec-body reveal d3"><span class="pc-text">化学調味料不使用ですので、過剰な旨みがございません。<br>つまり、今まで食べた繊細な焼き鳥やおつまみの余韻を損なうことがないのです。<br>またグルテンフリーですので、胃や腸への負担が少なく<br>「重い」「食べ過ぎた」ということにもなり辛いソースとなっております。<br>むしろ、クミンやコリアンダー、ターメリックといったスパイスの効能で、<br>消化を促進し食後の満足感を心地よく引き上げてくれるのです。</span><span class="sp-text">化学調味料不使用ですので、過剰な旨みがございません。<br>つまり、今まで食べた繊細な焼き鳥やおつまみの余韻を損なうことがないのです。<br>またグルテンフリーですので、胃や腸への負担が少なく「重い」「食べ過ぎた」ということにもなり辛いソースとなっております。<br>むしろ、クミンやコリアンダー、ターメリックといったスパイスの効能で、消化を促進し食後の満足感を心地よく引き上げてくれるのです。</span></p>
   </div>
   <div class="sec-quality-img reveal right">
     <img src="wquality.png" alt="スパイスカレー">
