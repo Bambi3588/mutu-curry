@@ -124,12 +124,12 @@ br.pc-only{display:inline}
 .quote-block::before{content:'"';position:absolute;top:-.3em;left:.5rem;font-size:5rem;color:rgba(232,101,26,.15);font-family:Georgia,serif;line-height:1}
 
 /* ═══ A2. WHY YAKITORI（画像左/テキスト右） ═══ */
-.sec-yakitori{display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
+.sec-yakitori{display:grid;grid-template-columns:1fr 1fr;min-height:55vh}
 .sec-yakitori-img{position:relative;overflow:hidden}
-.sec-yakitori-img img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease;display:block}
+.sec-yakitori-img img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform 8s ease;display:block}
 .sec-yakitori:hover .sec-yakitori-img img{transform:scale(1.05)}
 .sec-yakitori-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,var(--paper))}
-.sec-yakitori-body{background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:6rem 5rem 6rem 3rem}
+.sec-yakitori-body{background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:4rem 5rem 4rem 3rem}
 .sec-yakitori-body .sec-label{border-color:var(--ember);color:var(--ember)}
 .sec-yakitori-body .sec-body{word-break:keep-all;overflow-wrap:break-word}
 
@@ -674,7 +674,7 @@ body{padding-top:64px}
     <div class="sec-label reveal">WHY YAKITORI</div>
     <h2 class="sec-title reveal">なぜ<span class="hl">焼き鳥屋</span>なのか？</h2>
     <p class="sec-body reveal d1">
-      <span class="pc-text">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった内臓系、<br>つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する必要がないのが最大の特徴です。</span>
+      <span class="pc-text">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。腿、胸肉はもちろん、ハツやレバーといった内臓系、つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する必要がないのが最大の特徴です。</span>
       <span class="sp-text">焼き鳥屋には、カレーと相性の良い食材がすでに<br>揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった内臓系<br>つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する<br>必要がないのが最大の特徴です。</span>
     </p>
     <p class="sec-body reveal d2">
@@ -918,7 +918,7 @@ body{padding-top:64px}
     <div class="custom-recipe2 reveal d3">
       <div class="custom-recipe2-badge">無料サンプル請求者 限定サービス</div>
       <div class="custom-recipe2-title">各店舗のコンセプト・客層に合わせた<br><span>「オリジナルレシピ」を<br class="sp-only">無償で作成・提供</span></div>
-      <p class="custom-recipe2-sub">他店との差別化や、季節・限定メニューの展開もお任せください。<br class="pc-only">売上の取りこぼしを防ぐため、メニュー開発を全力でサポートします。</p>
+      <p class="custom-recipe2-sub"><span class="pc-text">他店との差別化や、季節・限定メニューの展開もお任せください。<br>売上の取りこぼしを防ぐため、メニュー開発を全力でサポートします。</span><span class="sp-text">他店との差別化や、季節・限定メニューの展開も<br>お任せください。<br>売上の取りこぼしを防ぐため、<br>メニュー開発を全力でサポートします。</span></p>
       <div class="custom-recipe2-cond">【 ご利用条件 】<br>無料サンプルをご請求いただいた店舗様に限り、<br>オリジナルレシピを無償にてご提供いたします。</div>
       <div class="custom-recipe2-note">✦ まずは無料サンプルをご請求ください ✦</div>
     </div>
