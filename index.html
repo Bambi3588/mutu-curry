@@ -211,6 +211,8 @@ br.pc-only{display:inline}
 .parallax-band-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:2rem}
 .pb-text{font-family:'Shippori Mincho B1',serif;font-size:clamp(1.2rem,4vw,2.5rem);font-weight:800;color:#fff;text-align:center;text-shadow:0 3px 20px rgba(0,0,0,.6);line-height:1.6}
 .pb-text span{color:var(--gold-lt)}
+.pb-tag-row{display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap}
+.pb-tag{border:1.5px solid var(--gold);color:var(--gold-lt);font-size:1rem;font-weight:700;letter-spacing:.12em;padding:.6em 1.8em;backdrop-filter:blur(4px);background:rgba(255,255,255,.06)}
 
 /* ═══ G. QUALITY（テキスト左/画像右） ═══ */
 .sec-quality{display:grid;grid-template-columns:1fr 1fr;min-height:75vh}
@@ -610,7 +612,7 @@ body{padding-top:64px}
 <div class="fixed-nav">
   <nav class="fixed-nav-bar">
     <div class="fnav-logo">
-      <img src="wlogo_color.png" alt="ムトゥカレー" class="fnav-logo-new">
+      <img src="wnewlogo.png" alt="ムトゥカレー" class="fnav-logo-new">
     </div>
     <a href="#cta" class="btn-fnav" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'});return false;">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.8 2 10.5c0 3.27 2.13 6.15 5.3 7.77L6.5 22l4.23-2.2c.42.06.84.1 1.27.1C17.52 19.9 22 16.1 22 10.5 22 5.8 17.52 2 12 2z"/></svg>
@@ -630,7 +632,7 @@ body{padding-top:64px}
   <div class="hero-content">
     <!-- ロゴ：上部中央に大きく -->
     <div class="hero-logo-wrap">
-      <img src="wlogo_color.png" alt="ムトゥカレーロゴ" class="hero-logo-new">
+      <img src="wnewlogo.png" alt="ムトゥカレーロゴ" class="hero-logo-new">
     </div>
     <!-- テキスト：下部に固定 -->
     <div class="hero-bottom">
@@ -675,11 +677,11 @@ body{padding-top:64px}
     <h2 class="sec-title reveal">なぜ<span class="hl">焼き鳥屋</span>なのか？</h2>
     <p class="sec-body reveal d1">
       <span class="pc-text">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。腿、胸肉はもちろん、ハツやレバーといった内臓系、つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する必要がないのが最大の特徴です。</span>
-      <span class="sp-text">焼き鳥屋には、カレーと相性の良い食材がすでに<br>揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった内臓系<br>つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する<br>必要がないのが最大の特徴です。</span>
+      <span class="sp-text">焼き鳥屋には、カレーと相性の良い食材がすでに<br>揃っています。<br>腿、胸肉はもちろん、ハツやレバーといった<br>内臓系、つくねといったミンチ肉。<br>つまり、カレーのために新たな食材を準備する<br>必要がないのが最大の特徴です。</span>
     </p>
     <p class="sec-body reveal d2">
       <span class="pc-text">また、仕込みで端折った端材や賞味期限前の部位を使うことで<br>ロス率を下げることにも繋がります。</span>
-      <span class="sp-text">また、仕込みで端折った端材や賞味期限前の部位を<br>使うことで<br>ロス率を下げることにも繋がります。</span>
+      <span class="sp-text">また、仕込み際に出た端材や賞味期限前の部位を<br>使うことでロス率を下げることにも繋がります。</span>
     </p>
   </div>
 </section>
@@ -702,7 +704,7 @@ body{padding-top:64px}
   <div class="sec-problem-inner">
     <div class="sec-label reveal">THE PROBLEM</div>
     <h2 class="sec-title reveal">しかし、カレーには<br><span style="color:var(--spice)">大きな問題があります</span></h2>
-    <p class="sec-body reveal d1" style="color:var(--mist)"><span class="pc-text">カレーは美味しい料理です。同時に<strong style="color:#fff">仕込みが極めて重い料理</strong>...</span><span class="sp-text">カレーは美味しい料理です。<br>同時に<strong style="color:#fff">仕込みが極めて重い料理</strong>...</span></p>
+    <p class="sec-body reveal d1" style="color:var(--mist)"><span class="pc-text">カレーは誰もが好きな料理。しかし、同時に<strong style="color:#fff">仕込みが極めて重い料理</strong>...</span><span class="sp-text">カレーは誰もが好きな料理。しかし、<br>同時に<strong style="color:#fff">仕込みが極めて重い料理</strong>...</span></p>
     <div class="prob-grid">
       <div class="prob-card reveal d1"><div class="p-title">大量のスパイス管理</div><div class="p-desc">スパイスカレーになると、最低でも10種程度の<br>スパイスが必要になります。<br>それらを密閉保存するための容器とスペースを<br>確保しなければなりません。</div></div>
       <div class="prob-card reveal d2"><div class="p-title">多工程・長時間の煮込み</div><div class="p-desc"><span class="pc-text">タマネギやニンニク、生姜を刻み炒め合わせていく。火入れ前の下拵えも合わせると、数時間はかかります。</span><span class="sp-text" style="font-size:.8rem;line-height:1.85">タマネギやニンニク、生姜を刻み炒め合わせていく。<br>火入れ前の下拵えも合わせると、数時間はかかります。</span></div></div>
@@ -740,7 +742,7 @@ body{padding-top:64px}
         <div class="step-card-body">
           <div class="step-num-badge">2</div>
           <div class="s-title">鶏肉を入れる</div>
-          <div class="s-desc">もも、むね、端材など部位を問わず<br>そのまま加えます。</div>
+          <div class="s-desc">もも肉や鶏肉など、生の状態を<br>そのまま加えます。</div>
         </div>
       </div>
       <div class="step-card reveal d3">
@@ -801,40 +803,21 @@ body{padding-top:64px}
 <div class="parallax-band">
   <div class="parallax-band-img" style="background-image:url('wband2.png');background-attachment:fixed"></div>
   <div class="parallax-band-overlay" style="background:rgba(10,6,2,.62)">
-    <div class="pb-text reveal">化学調味料不使用 × グルテンフリー<br><span>スパイスの香りを活かした、<br>軽やかな本格カレー</span></div>
+    <div class="pb-tag-row reveal">
+      <span class="pb-tag">化学調味料不使用</span>
+      <span class="pb-tag">グルテンフリー</span>
+      <span class="pb-tag">中辛</span>
+    </div>
   </div>
 </div>
 
-<!-- ═══════ G. 品質 ═══════ -->
-<div class="sec-quality">
-  <div class="sec-quality-body">
-    <div class="sec-label reveal">QUALITY & ARRANGE</div>
-    <h2 class="sec-title reveal">焼き鳥屋だからできる<br><span class="hl">〆カレー</span></h2>
-    <div class="tag-pills reveal">
-      <span class="tag-pill">化学調味料不使用</span>
-      <span class="tag-pill">グルテンフリー</span>
-      <br class="sp-only">
-      <span class="tag-pill">中辛</span>
-    </div>
-    <p class="sec-body reveal d1"><span class="pc-text">焼き鳥屋には、カレーと相性の良い食材がすでに揃っています。<br>お店にある食材を加えるだけで<strong>貴店だけの〆カレー</strong>が完成します。</span><span class="sp-text">焼き鳥屋には、カレーと相性の良い食材が<br>すでに揃っています。<br>お店にある食材を加えるだけで<br><strong>貴店だけの〆カレー</strong>が完成します。</span></p>
-    <div class="topping-grid reveal d2">
-      <div class="topping-chip"><span class="tc-icon">🍗</span>様々な部位の鶏肉</div>
-      <div class="topping-chip"><span class="tc-icon">🥚</span>温泉卵</div>
-      <div class="topping-chip"><span class="tc-icon">🍖</span>つくね</div>
-    </div>
-    <p class="sec-body reveal d3"><span class="pc-text">化学調味料不使用ですので、過剰な旨みがございません。<br>つまり、今まで食べた繊細な焼き鳥やおつまみの余韻を損なうことがないのです。<br>またグルテンフリーですので、胃や腸への負担が少なく<br>「重い」「食べ過ぎた」ということにもなり辛いソースとなっております。<br>むしろ、クミンやコリアンダー、ターメリックといったスパイスの効能で、<br>消化を促進し食後の満足感を心地よく引き上げてくれるのです。</span><span class="sp-text">化学調味料不使用ですので、過剰な旨みがございません。<br>つまり、今まで食べた繊細な焼き鳥やおつまみの余韻を損なうことがないのです。<br>またグルテンフリーですので、胃や腸への負担が少なく「重い」「食べ過ぎた」ということにもなり辛いソースとなっております。<br>むしろ、クミンやコリアンダー、ターメリックといったスパイスの効能で、消化を促進し食後の満足感を心地よく引き上げてくれるのです。</span></p>
-  </div>
-  <div class="sec-quality-img reveal right">
-    <img src="wquality.png" alt="スパイスカレー">
-  </div>
-</div>
 
 
 <!-- ═══════ H. 利益 ═══════ -->
 <section class="sec-profit">
   <div class="sec-profit-inner">
     <div class="sec-label reveal">PROFIT ANALYSIS</div>
-    <h2 class="sec-title reveal">大事なのは<br><span style="color:var(--gold)">減価率より粗利益</span></h2>
+    <h2 class="sec-title reveal">〆カレーは<br><span style="color:var(--gold)">どのくらい売れるのか</span></h2>
     <p class="sec-body reveal d1 profit-judge" style="color:var(--mist)"><span class="pc-text">飲食店では「減価率」で判断しがちですが、実際の経営で重要なのは<strong style="color:#fff">1皿でいくら儲かるのか</strong>です。</span><span class="sp-text">飲食店では「減価率」で判断しがちですが、<br>実際の経営で重要なのは<strong style="color:#fff">1皿でいくら儲かるのか</strong>です。</span></p>
     <div class="compare-grid">
       <div class="compare-card reveal d1">
@@ -867,7 +850,7 @@ body{padding-top:64px}
 <section class="sec-revenue">
   <div class="sec-revenue-inner">
     <div class="sec-label reveal">REVENUE SIMULATION</div>
-    <h2 class="sec-title reveal">〆カレーは<br><span style="color:var(--gold-lt)">どのくらい売れるのか</span></h2>
+    <h2 class="sec-title reveal">大事なのは<br><span style="color:var(--gold-lt)">減価率より粗利益</span></h2>
     <div class="rev-cards">
       <div class="rev-card reveal d1">
         <div class="rc-label">1日3杯 × 1,180円 × 月25日</div>
