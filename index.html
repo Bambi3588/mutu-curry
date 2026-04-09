@@ -214,6 +214,12 @@ br.pc-only{display:inline}
 .pb-tag-row{display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap}
 .pb-tag{border:1.5px solid var(--gold);color:var(--gold-lt);font-size:1rem;font-weight:700;letter-spacing:.12em;padding:.6em 1.8em;backdrop-filter:blur(4px);background:rgba(255,255,255,.06)}
 
+/* ═══ G. QUALITY BANNER ═══ */
+.sec-quality-banner{background:var(--cream);padding:5rem 2rem;border-top:1px solid var(--mist)}
+.sec-quality-banner-inner{max-width:860px;margin:0 auto}
+.sec-quality-banner .sec-title{color:var(--char);margin-bottom:.5rem}
+.sec-quality-banner .tag-pills{margin-top:1.8rem}
+
 /* ═══ G. QUALITY（テキスト左/画像右） ═══ */
 .sec-quality{display:grid;grid-template-columns:1fr 1fr;min-height:75vh}
 .sec-quality-body{background:var(--cream);display:flex;flex-direction:column;justify-content:center;padding:6rem 4rem 6rem 5rem}
@@ -704,7 +710,7 @@ body{padding-top:64px}
   <div class="sec-problem-inner">
     <div class="sec-label reveal">THE PROBLEM</div>
     <h2 class="sec-title reveal">しかし、カレーには<br><span style="color:var(--spice)">大きな問題があります</span></h2>
-    <p class="sec-body reveal d1" style="color:var(--mist)"><span class="pc-text">カレーは誰もが好きな料理。しかし、同時に<strong style="color:#fff">仕込みが極めて重い料理</strong>...</span><span class="sp-text">カレーは誰もが好きな料理。しかし、<br>同時に<strong style="color:#fff">仕込みが極めて重い料理</strong>...</span></p>
+    <p class="sec-body reveal d1" style="color:var(--mist)"><span class="pc-text">カレーは誰もが好きな料理。しかし、同時に仕込みが...</span><span class="sp-text">カレーは誰もが好きな料理。しかし、<br>同時に仕込みが...</span></p>
     <div class="prob-grid">
       <div class="prob-card reveal d1"><div class="p-title">大量のスパイス管理</div><div class="p-desc">スパイスカレーになると、最低でも10種程度の<br>スパイスが必要になります。<br>それらを密閉保存するための容器とスペースを<br>確保しなければなりません。</div></div>
       <div class="prob-card reveal d2"><div class="p-title">多工程・長時間の煮込み</div><div class="p-desc"><span class="pc-text">タマネギやニンニク、生姜を刻み炒め合わせていく。火入れ前の下拵えも合わせると、数時間はかかります。</span><span class="sp-text" style="font-size:.8rem;line-height:1.85">タマネギやニンニク、生姜を刻み炒め合わせていく。<br>火入れ前の下拵えも合わせると、数時間はかかります。</span></div></div>
@@ -799,19 +805,22 @@ body{padding-top:64px}
   </div>
 </section>
 
-<!-- parallax 2 -->
-<div class="parallax-band">
-  <div class="parallax-band-img" style="background-image:url('wband2.png');background-attachment:fixed"></div>
-  <div class="parallax-band-overlay" style="background:rgba(10,6,2,.62)">
-    <div class="pb-tag-row reveal">
-      <span class="pb-tag">化学調味料不使用</span>
-      <span class="pb-tag">グルテンフリー</span>
-      <span class="pb-tag">中辛</span>
+
+
+
+
+<!-- ═══════ G. 品質 ═══════ -->
+<section class="sec-quality-banner reveal">
+  <div class="sec-quality-banner-inner">
+    <div class="sec-label">QUALITY & ARRANGE</div>
+    <h2 class="sec-title">焼き鳥屋だからできる<br><span class="hl">〆カレー</span></h2>
+    <div class="tag-pills">
+      <span class="tag-pill">化学調味料不使用</span>
+      <span class="tag-pill">グルテンフリー</span>
+      <span class="tag-pill">中辛</span>
     </div>
   </div>
-</div>
-
-
+</section>
 
 <!-- ═══════ H. 利益 ═══════ -->
 <section class="sec-profit">
